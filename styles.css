@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #52E1EA;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 4px solid orange;
+  text-align: center;
+  color: wheat;
+  text-transform: uppercase;
+  background: rgb(238, 100, 123);
+
+}
+
+.gallery {
+  padding: 20px 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
